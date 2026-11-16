@@ -1,36 +1,29 @@
 # Mustafai Organization of India Foundation — Website
 
-A responsive, animated static website ready for GitHub Pages.
+A responsive, animated static website prepared for GitHub Pages.
 
-## Official details included
+## Publish on GitHub Pages
+1. Extract this ZIP.
+2. Upload **all files and folders inside** the extracted folder to the root of your GitHub repository. Do not upload the outer folder itself.
+3. Keep `index.html` at repository root and keep `assets/` with both image files.
+4. Open **Settings → Pages**. Choose **Deploy from a branch**, select branch `main` and folder `/(root)`, then Save.
+5. Wait for GitHub Pages to finish deployment. Open the published URL shown in Settings → Pages.
+
+## Donate Now button — current behavior
+The official UPI ID has not been provided, so the Donate Now button opens a WhatsApp chat to the foundation’s phone number (+91 75420 01085) with a pre-filled request for official donation details. It does **not** pretend to take a payment.
+
+When the foundation has a verified UPI ID, open `config.js` and replace the empty `upiId` value with that exact ID. The button will then open a UPI payment intent. Test it on a phone with a UPI app installed before announcing donations.
+
+## Contact details included
 - Email: mustafaiorganizationofindia@gmail.com
-- Phone: +91 75420 01085 (tap-to-call)
+- Phone / WhatsApp: +91 75420 01085
 - Instagram: https://www.instagram.com/mustafai.organization.official/
 - CIN: U88900BR2025NPL079085
 - Registration number: 79085
-- Registered address: C/O MD Sattar, Village Barauna, Tola-Bharara, Kanti, Muzaffarpur, Bihar 843109, India
+- Registered address: C/O MD Sattar, Village Barauna, Tola-Bharara, Kanti, Muzaffarpur, Bihar – 843109, India
 
-The footer includes the exact credit: **Website Designed & Developed by AZ Digital Solutions**.
+## SEO note
+`robots.txt` and `sitemap.xml` are included. After GitHub Pages is live, replace the sample URL in `sitemap.xml` with the exact published URL and add the matching canonical URL to `index.html` if desired.
 
-## Publish on GitHub Pages
-1. Download and extract this ZIP.
-2. Create a new public GitHub repository (for example `mustafai-foundation`).
-3. Upload all extracted files and folders into the repository root. Do not upload the ZIP itself.
-4. Open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then Save.
-5. Wait for GitHub Pages to publish. Your site URL will look like `https://YOUR-GITHUB-USERNAME.github.io/mustafai-foundation/`.
-6. For best SEO, replace the placeholder canonical URL in `index.html`, and the placeholder site URL in `robots.txt` and `sitemap.xml` with your actual live URL, then upload those three updated files.
-
-## Donation button — important
-The **Donate Now** button is active and attempts to open a UPI payment app using a generic UPI intent. No UPI ID has been added, as requested. Without the foundation's verified UPI ID, the payment app may open with no recipient and a donation cannot be completed.
-
-When the UPI ID is ready, open `config.js` and set `upiId` to the official ID, for example `foundation@okaxis`. Do not use the example; enter only the foundation's verified UPI ID. The button will then pass the recipient ID, foundation name and INR currency to the UPI app. Test on an Android phone and verify the recipient name before sharing the website.
-
-## Included files
-- `index.html` — pages, contact details and SEO metadata
-- `style.css` — responsive layout and animations
-- `script.js` — navigation, reveal effects and Donate Now action
-- `config.js` — future UPI configuration
-- `assets/logo.png` — supplied foundation logo
-- `robots.txt`, `sitemap.xml` — crawler and sitemap files
-
-The CIN, registration number and address were transcribed from the image supplied by the user. Please verify legal details against official records before publishing.
+## Footer credit
+The bottom-center credit reads: **Website Designed & Developed by AZ Digital Solutions**.
